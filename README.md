@@ -4,7 +4,6 @@
 
 [![.NET Version](https://img.shields.io/badge/.NET-10-blue?style=flat-square&logo=.net)](https://dotnet.microsoft.com/)
 [![Language](https://img.shields.io/badge/Language-C%23-purple?style=flat-square&logo=csharp)](https://docs.microsoft.com/en-us/dotnet/csharp/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-black?style=flat-square&logo=github)](https://github.com/KuraiKutsuki/Patanao_BSIT-3A_Minimal_API)
 
 ---
