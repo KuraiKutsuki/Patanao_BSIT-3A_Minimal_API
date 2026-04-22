@@ -60,6 +60,8 @@ namespace ProductAPIDemo.Controllers
             existingProduct.Description = product.Description;
             existingProduct.Price = product.Price;
             existingProduct.Stock = product.Stock;
+            existingProduct.CategoryID = product.CategoryID;
+            existingProduct.SupplierID = product.SupplierID;
 
             await _dbContext.SaveChangesAsync();
 
@@ -67,7 +69,7 @@ namespace ProductAPIDemo.Controllers
         }
 
         //Delete: api/Product/{id}
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteProduct(int id)
         {
             if (!ModelState.IsValid)
