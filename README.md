@@ -11,16 +11,16 @@
 
 ## 📑 Table of Contents
 
-- [✨ Overview](#-overview)
-- [📂 Project Structure](#-project-structure)
-- [⚙️ Prerequisites](#️-prerequisites)
-- [🚀 Installation & Setup](#-installation--setup)
-- [🗄️ Database Configuration](#️-database-configuration)
-- [📡 API Endpoints](#-api-endpoints)
-- [📊 Models](#-models)
-- [🛠️ Technologies](#️-technologies)
-- [💻 Development](#-development)
-- [👨‍💻 Created By](#-created-by)
+- [Overview](#-overview)
+- [Project Structure](#-project-structure)
+- [Prerequisites](#️-prerequisites)
+- [Installation & Setup](#-installation--setup)
+- [Database Configuration](#️-database-configuration)
+- [API Endpoints](#-api-endpoints)
+- [Models](#-models)
+- [Technologies](#️-technologies)
+- [Development](#-development)
+- [Created By](#-created-by)
 
 ## ✨ Overview
 
@@ -28,12 +28,12 @@ The **Product Management System API** is a robust, minimal API demonstration pro
 
 | Category | Purpose |
 |----------|---------|
-| 📦 **Products** | Product information with pricing and stock management |
-| 🏷️ **Categories** | Product categories and classifications |
-| 🚚 **Suppliers** | Supplier information for products |
-| 👥 **Customers** | Customer data management |
+| **Products** | Product information with pricing and stock management |
+| **Categories** | Product categories and classifications |
+| **Suppliers** | Supplier information for products |
+| **Customers** | Customer data management |
 
-✅ **Features:**
+**Features:**
 - Entity Framework Core with SQL Server integration
 - CORS configuration for cross-origin requests
 - Swagger/OpenAPI documentation
@@ -75,18 +75,18 @@ ProductAPIDemo/
 
 ## 🚀 Installation & Setup
 
-### Step 1️⃣ - Clone the Repository
+### Step 1 - Clone the Repository
 ```bash
 git clone https://github.com/KuraiKutsuki/Patanao_BSIT-3A_Minimal_API.git
 cd ProductAPIDemo
 ```
 
-### Step 2️⃣ - Install Dependencies
+### Step 2 - Install Dependencies
 ```bash
 dotnet restore
 ```
 
-### Step 3️⃣ - Configure Database Connection
+### Step 3 - Configure Database Connection
 Update the `appsettings.json` file with your SQL Server connection string:
 ```json
 {
@@ -96,12 +96,12 @@ Update the `appsettings.json` file with your SQL Server connection string:
 }
 ```
 
-### Step 4️⃣ - Apply Database Migrations
+### Step 4 - Apply Database Migrations
 ```bash
 dotnet ef database update
 ```
 
-### Step 5️⃣ - Run the Application
+### Step 5 - Run the Application
 ```bash
 dotnet run
 ```
@@ -128,14 +128,14 @@ Edit `appsettings.json` to change the connection:
 
 ### 📦 Database Context
 The `ApplicationDBContext` manages all database operations with DbSets for:
-- ✅ Products
-- ✅ Categories
-- ✅ Suppliers
-- ✅ Customers
+- Products
+- Categories
+- Suppliers
+- Customers
 
 ## 📡 API Endpoints
 
-### 📦 Products
+### Products
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET` | `/api/product` | Get all products |
@@ -144,7 +144,7 @@ The `ApplicationDBContext` manages all database operations with DbSets for:
 | `PUT` | `/api/product/{id}` | Update a product |
 | `DELETE` | `/api/product/{id}` | Delete a product |
 
-### 🏷️ Categories
+### Categories
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET` | `/api/category` | Get all categories |
@@ -153,7 +153,7 @@ The `ApplicationDBContext` manages all database operations with DbSets for:
 | `PUT` | `/api/category/{id}` | Update a category |
 | `DELETE` | `/api/category/{id}` | Delete a category |
 
-### 🚚 Suppliers
+### Suppliers
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET` | `/api/supplier` | Get all suppliers |
@@ -162,7 +162,7 @@ The `ApplicationDBContext` manages all database operations with DbSets for:
 | `PUT` | `/api/supplier/{id}` | Update a supplier |
 | `DELETE` | `/api/supplier/{id}` | Delete a supplier |
 
-### 👥 Customers
+### Customers
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | `GET` | `/api/customer` | Get all customers |
@@ -173,7 +173,7 @@ The `ApplicationDBContext` manages all database operations with DbSets for:
 
 ## 📊 Models
 
-### 📦 Product
+### Product
 ```csharp
 public class Product
 {
@@ -189,7 +189,7 @@ public class Product
 }
 ```
 
-### 🏷️ Category
+### Category
 ```csharp
 public class Category
 {
@@ -200,7 +200,7 @@ public class Category
 }
 ```
 
-### 🚚 Supplier
+### Supplier
 ```csharp
 public class Supplier
 {
@@ -208,7 +208,7 @@ public class Supplier
 }
 ```
 
-### 👥 Customer
+### Customer
 ```csharp
 public class Customer
 {
@@ -220,9 +220,9 @@ public class Customer
 
 ### 🔐 CORS Configuration
 The application is configured with "AllowAll" policy for cross-origin requests:
-- ✅ Allows any origin
-- ✅ Allows any HTTP method
-- ✅ Allows any header
+- Allows any origin
+- Allows any HTTP method
+- Allows any header
 
 ### 📚 Swagger/OpenAPI
 | Environment | Status |
@@ -249,7 +249,6 @@ The application is configured with "AllowAll" policy for cross-origin requests:
 Use one of these tools to test the API:
 - 📊 **Swagger UI** (built-in)
 - 📮 **Postman**
-- 🐛 **Insomnia**
 - 📄 **ProductAPIDemo.http** file in Visual Studio
 
 ### 📦 Creating Database Migrations
