@@ -221,10 +221,10 @@ dotnet ef migrations add MigrationName
 dotnet ef database update
 ```
 
-## License
+## 👨‍💻 Created By
 
-This project is part of the BSIT-3A coursework.
-
-## Support
-
-For issues or questions, please visit the [GitHub Repository](https://github.com/KuraiKutsuki/Patanao_BSIT-3A_Minimal_API).
+| Field | Details |
+|-------|---------|
+| **Developer** | Asthan Eilexer J. Patanao |
+| **Section** | BSIT-3A |
+| **Project** | Product Management System API |
